@@ -143,7 +143,7 @@ install_os_packages () {
 		;;
 	'linux-ubuntu-14'*|'linux-ubuntu-15'*)
 		sudo bash -c 'apt-get update &&
-			apt-get install -y build-essential git pigz zlib1g-dev' || return 1
+			apt-get install -y build-essential git pigz zlib1g-dev libgmp-dev' || return 1
 		;;
 	'osx-10.7-'*|'osx-10.8-'*)
 		echo '   *** WARNING: Cannot install OS packages' >&2
